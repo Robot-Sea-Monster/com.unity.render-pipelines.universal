@@ -33,7 +33,7 @@ namespace UnityEngine.Rendering.Universal
 
         public DBufferRenderPass(Material dBufferClear, DBufferSettings settings, DecalDrawDBufferSystem drawSystem)
         {
-            renderPassEvent = RenderPassEvent.AfterRenderingPrePasses + 1;
+            renderPassEvent = RenderPassEvent.AfterRenderingSkybox + 1;
             ConfigureInput(ScriptableRenderPassInput.Normal); // Require depth
 
             m_DrawSystem = drawSystem;
